@@ -31,7 +31,7 @@ class Song
     @@genres.each { |g| array << g unless array.include?(g) }
     array
   end
-  
+  binding.pry
   def self.genre_count
     hash = {}
     @@genres.each { |g| hash.include?(g) ? hash[g] += 1 : hash[g] = 1 }
